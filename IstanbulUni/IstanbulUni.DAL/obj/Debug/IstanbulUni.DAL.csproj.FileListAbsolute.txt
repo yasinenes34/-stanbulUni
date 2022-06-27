@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll.config
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.pdb
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.createusertable.resources
+C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.GenerateResource.cache
