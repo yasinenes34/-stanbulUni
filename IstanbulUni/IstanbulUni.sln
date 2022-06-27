@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IstanbulUni.DAL", "Istanbul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IstanbulUni.WebUI", "IstanbulUni.WebUI\IstanbulUni.WebUI.csproj", "{627AADC3-B4AF-4BA9-949B-32A2164534F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IstanbulUni.BAL", "IstanbulUni.BAL\IstanbulUni.BAL.csproj", "{2898738E-E438-4B83-A2FF-94961597C5D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{627AADC3-B4AF-4BA9-949B-32A2164534F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{627AADC3-B4AF-4BA9-949B-32A2164534F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{627AADC3-B4AF-4BA9-949B-32A2164534F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2898738E-E438-4B83-A2FF-94961597C5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2898738E-E438-4B83-A2FF-94961597C5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2898738E-E438-4B83-A2FF-94961597C5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2898738E-E438-4B83-A2FF-94961597C5D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

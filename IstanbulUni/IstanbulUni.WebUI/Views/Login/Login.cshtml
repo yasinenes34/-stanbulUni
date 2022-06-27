@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+
+<div class="demo-section">
+    <form id="login" data-role="validator" novalidate="novalidate">
+        <ul id="fieldlist">
+            <li>
+                <label for="Surname">User Name:</label>
+                <span class="k-textbox k-input k-input-md k-rounded-md k-input-solid">
+                    <input type="text" class="k-input-inner" name="username" id="username" required="required" />
+                </span>
+            </li>
+            <li>
+                <label for="Surname">Password:</label>
+                <span class="k-textbox k-input k-input-md k-rounded-md k-input-solid">
+                    <input type="text" class="k-input-inner" name="password" id="password" required="required" />
+                </span>
+            </li>
+            <li>
+                
+            </li>
+            <li class="actions">
+                <button type="button" data-role="button" data-icon="check" data-click='save'>Login</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+<script type="text/javascript">
+    
+
+    function save(e) {
+        var validator = $("#login").data("kendoValidator");
+        if (validator.validate()) {
+            alert("Login Success");
+        }
+    }
+
+</script>
+
+<style>
+
+    #fieldlist {
+        margin: 0 0 -2em;
+        padding: 0;
+    }
+
+        #fieldlist li {
+            list-style: none;
+            padding-bottom: 2em;
+        }
+
+        #fieldlist label {
+            display: block;
+            padding-bottom: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        #fieldlist input {
+            width: 100%;
+        }
+
+    span.k-tooltip {
+        margin-top: 5px;
+        line-height: 1.7em;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+</style>
