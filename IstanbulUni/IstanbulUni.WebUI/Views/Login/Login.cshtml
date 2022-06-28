@@ -4,75 +4,53 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Login</h2>
+<div class="container">
 
-
-<div class="demo-section">
-    <form id="login" data-role="validator" novalidate="novalidate">
-        <ul id="fieldlist">
-            <li>
-                <label for="Surname">User Name:</label>
-                <span class="k-textbox k-input k-input-md k-rounded-md k-input-solid">
-                    <input type="text" class="k-input-inner" name="username" id="username" required="required" />
-                </span>
-            </li>
-            <li>
-                <label for="Surname">Password:</label>
-                <span class="k-textbox k-input k-input-md k-rounded-md k-input-solid">
-                    <input type="text" class="k-input-inner" name="password" id="password" required="required" />
-                </span>
-            </li>
-            <li>
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
                 
-            </li>
-            <li class="actions">
-                <button type="button" data-role="button" data-icon="check" data-click='save'>Login</button>
-            </li>
-        </ul>
-    </form>
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                        </div>
+                        @using (Html.BeginForm("AddAbout", "About", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <form class="user">
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="email"
+                                           placeholder="Email Address">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="password" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="repeatpassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    Register Account
+                                </a>
+
+                            </form>
+                        }
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-
-<script type="text/javascript">
-    
-
-    function save(e) {
-        var validator = $("#login").data("kendoValidator");
-        if (validator.validate()) {
-            alert("Login Success");
-        }
-    }
-
-</script>
-
-<style>
-
-    #fieldlist {
-        margin: 0 0 -2em;
-        padding: 0;
-    }
-
-        #fieldlist li {
-            list-style: none;
-            padding-bottom: 2em;
-        }
-
-        #fieldlist label {
-            display: block;
-            padding-bottom: 1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 12px;
-        }
-
-        #fieldlist input {
-            width: 100%;
-        }
-
-    span.k-tooltip {
-        margin-top: 5px;
-        line-height: 1.7em;
-        width: 100%;
-        box-sizing: border-box;
-        text-align: left;
-    }
-</style>

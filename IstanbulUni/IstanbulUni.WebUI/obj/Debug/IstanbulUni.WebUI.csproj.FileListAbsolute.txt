@@ -117,3 +117,11 @@ C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.csproj.CopyComplete
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.dll
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.pdb
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Telerik.Web.Design.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Telerik.Web.Device.Detection.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Telerik.Web.UI.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Telerik.Web.UI.Skins.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\EnvDTE.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\stdole.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\EntityFramework.SqlServer.xml

@@ -26,3 +26,4 @@ C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\I
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.aa.resources

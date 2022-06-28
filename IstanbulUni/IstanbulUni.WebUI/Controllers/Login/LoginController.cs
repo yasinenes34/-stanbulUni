@@ -9,9 +9,11 @@ namespace IstanbulUni.WebUI.Controllers.Login
     public class LoginController : Controller
     {
         // GET: Login
+       
         public ActionResult Login()
         {
             return View();
         }
+       
     }
 }

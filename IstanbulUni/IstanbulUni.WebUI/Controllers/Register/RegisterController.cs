@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using IstanbulUni.WebUI.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,5 +15,18 @@ namespace IstanbulUni.WebUI.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult Register(User user)
+        {
+            return View(user);
+             string email= user.Email;
+            string password= user.Password;
+            string password1 = user.Password;
+
+        }
+
+
+
     }
 }

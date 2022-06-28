@@ -59,7 +59,12 @@
     <Compile Include="Migrations\202206251142454_create-user-table.designer.cs">
       <DependentUpon>202206251142454_create-user-table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206280825042_aa.cs" />
+    <Compile Include="Migrations\202206280825042_aa.designer.cs">
+      <DependentUpon>202206280825042_aa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +75,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202206251142454_create-user-table.resx">
       <DependentUpon>202206251142454_create-user-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206280825042_aa.resx">
+      <DependentUpon>202206280825042_aa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
