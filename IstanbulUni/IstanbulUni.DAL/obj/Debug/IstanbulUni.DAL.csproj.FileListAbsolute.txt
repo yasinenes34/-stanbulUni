@@ -21,9 +21,9 @@ C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\E
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.AssemblyReference.cache
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.createusertable.resources
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.aa.resources
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.GenerateResource.cache
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
 C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.aa.resources

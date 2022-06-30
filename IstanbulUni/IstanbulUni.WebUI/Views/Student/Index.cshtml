@@ -1,0 +1,56 @@
+﻿@model IEnumerable<IstanbulUni.DAL.Model.Student>
+@{
+    ViewBag.Title = "StudentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="card shadow .col-12 .col-sm-6 .col-lg-8">
+        <div class="card-body">
+            <form method="post">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>İsim</th>
+                                <th>Soy İsim</th>
+                                <th>Öğrenci Numarası</th>
+                                <th>Üniversite İsmi</th>
+                                <th>Not</th>
+
+                                <th>Güncelle</th>
+                                <th>Sil</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var i in Model)
+                            {
+                                <tr>
+                                    <td>@i.ID</td>
+                                    <td>@i.Name</td>
+                                    <td>@i.Surname</td>
+                                    <td>@i.StudentNo</td>
+                                    <td>@i.UniversityName</td>
+                                    <td>@i.examScore</td>
+
+                                    <td> <a href="/UpdateStudent/@i.ID" class="btn btn-warning"><i class="dw dw-edit2 "></i> Güncelle</a></td>
+                                    <td>  <a class="btn btn-danger" onclick="return confirm('Silmek istediğinize eminmisiniz ?')" href="/Student/DeleteStudent/@i.ID"><i class="dw dw-delete-3"></i> Sil</a></td>
+
+
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                    <button class="btn btn-info text-gray-900 text-light">@Html.ActionLink("Öğrenci Ekle", "StudentAdd", "Student")</button>
+
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -18,27 +18,41 @@ namespace IstanbulUni.WebUI
             //    url: "{controller}/{action}/{id}",
             //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             //);
-            routes.MapRoute(
-                  name: "Register",
-                  url: "",
-                  defaults: new { controller = "Register", action = "Register", id = UrlParameter.Optional }
-              );
-            routes.MapRoute(
-                   name: "Anasayfa",
-                   url: "",
-                   defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-               );
-            routes.MapRoute(
-                  name: "Anasayfa2",
-                  url: "anasayfa",
-                  defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-              );
            
             routes.MapRoute(
-                  name: "Login",
-                  url: "login",
-                  defaults: new { controller = "Login", action = "Login", id = UrlParameter.Optional }
+                   name: "Login",
+                   url: "",
+                   defaults: new { controller = "User", action = "Login", id = UrlParameter.Optional }
+               );
+
+            routes.MapRoute(
+                  name: "Register",
+                  url: "register",
+                  defaults: new { controller = "User", action = "Register", id = UrlParameter.Optional }
               );
+           
+
+            routes.MapRoute(
+                name: "Index",
+                url: "studentIndex",
+                defaults: new { controller = "Student", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+               name: "StudentAdd",
+               url: "studentadd",
+               defaults: new { controller = "Student", action = "StudentAdd", id = UrlParameter.Optional }
+           );
+            routes.MapRoute(
+               name: "StudentUpdate",
+               url: "studentadd",
+               defaults: new { controller = "Student", action = "StudentAdd", id = UrlParameter.Optional }
+           );
+
+
+
+
+
+
 
         }
     }
