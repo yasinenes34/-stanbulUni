@@ -48,5 +48,10 @@ namespace IstanbulUni.BAL.Concrete
                 return false;
             }
         }
+
+        public void StudentUpdate(Student student)
+        {
+           _student.Update(student);
+        }
     }
 }

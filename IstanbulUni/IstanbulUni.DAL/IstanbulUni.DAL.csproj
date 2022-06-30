@@ -75,7 +75,7 @@
     <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Repositories\App.config" />
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

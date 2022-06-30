@@ -15,18 +15,23 @@ namespace IstanbulUni.WebUI.Controllers
     public class StudentController : Controller
     {
         StudentManager sm = new StudentManager(new EfStudentDal());
-      
-        // GET: Student
+        #region Index
         public ActionResult Index()
         {
             var userval = sm.GetListBl();
             return View(userval);
         }
+        #endregion
+        #region List
+        [Route("studentlist")]
         public ActionResult StudentList()
         {
             var userval = sm.GetListBl();
             return View(userval);
         }
+        #endregion
+        #region Add
+        [Route("studentadd")]
         public ActionResult StudentAdd(Student student)
         {
             StudentValidator validations = new StudentValidator();
@@ -46,13 +51,24 @@ namespace IstanbulUni.WebUI.Controllers
 
             return View();
         }
+        #endregion
+        // GET: Student
+
+        [HttpGet]
+        public ActionResult StudentUpdate(int id)
+        {
+            var student = sm.GetByID(id);
+            return View(student);
+        }
+        [HttpPost]
+        [Route("Student/UpdateStudent/{id}")]
         public ActionResult StudentUpdate(Student student)
         {
             StudentValidator validations = new StudentValidator();
             ValidationResult result = validations.Validate(student);
             if (result.IsValid)
             {
-                
+                sm.StudentUpdate(student);
                 return RedirectToAction("StudentList");
             }
             else
@@ -63,17 +79,19 @@ namespace IstanbulUni.WebUI.Controllers
                 }
             }
 
-            return View();
+            return View(student);
         }
 
-
-       
+        #region Delete
+        [Route("Student/DeleteStudent/{id}")]
         public ActionResult DeleteStudent(int id)
         {
-            var studentInfo = sm.GetByID(id);
-           
+            var student = sm.GetByID(id);
+            sm.StudentRemoveBl(student);
 
-            return View();
+            return RedirectToAction("StudentList", "Student");
         }
+        #endregion
+
     }
 }

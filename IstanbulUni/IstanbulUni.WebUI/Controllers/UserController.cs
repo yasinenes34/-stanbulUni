@@ -36,6 +36,7 @@ namespace IstanbulUni.WebUI.Controllers
 
 
         }
+        [Route("register")]
         public ActionResult Register()
         {
             return View();

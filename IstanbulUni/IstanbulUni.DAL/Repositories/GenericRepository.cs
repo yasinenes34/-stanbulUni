@@ -20,7 +20,9 @@ namespace IstanbulUni.DAL.Repositories
         }
         public void Delete(T d)
         {
-            obj.Remove(d);
+            var deletedEntity=db.Entry(d);
+            deletedEntity.State=EntityState.Deleted;
+           // obj.Remove(d);
             db.SaveChanges();
         }
 
@@ -31,7 +33,9 @@ namespace IstanbulUni.DAL.Repositories
 
         public void Insert(T d)
         {
-            obj.Add(d);
+            var addedEntity=db.Entry(d);
+            addedEntity.State= EntityState.Added;       
+            //obj.Add(d);
             db.SaveChanges();
         }
 
@@ -47,6 +51,8 @@ namespace IstanbulUni.DAL.Repositories
 
         public void Update(T d)
         {
+            var updatedEntity=db.Entry(d);
+            updatedEntity.State= EntityState.Modified;  
             db.SaveChanges();
         }
     }

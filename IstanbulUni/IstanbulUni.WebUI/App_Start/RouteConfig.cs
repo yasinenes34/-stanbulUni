@@ -18,18 +18,19 @@ namespace IstanbulUni.WebUI
             //    url: "{controller}/{action}/{id}",
             //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             //);
-           
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                    name: "Login",
                    url: "",
                    defaults: new { controller = "User", action = "Login", id = UrlParameter.Optional }
                );
 
-            routes.MapRoute(
-                  name: "Register",
-                  url: "register",
-                  defaults: new { controller = "User", action = "Register", id = UrlParameter.Optional }
-              );
+                //routes.MapRoute(
+                //      name: "Register",
+                //      url: "register",
+                //      defaults: new { controller = "User", action = "Register", id = UrlParameter.Optional }
+                //  );
            
 
             routes.MapRoute(
@@ -37,15 +38,15 @@ namespace IstanbulUni.WebUI
                 url: "studentIndex",
                 defaults: new { controller = "Student", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapRoute(
-               name: "StudentAdd",
-               url: "studentadd",
-               defaults: new { controller = "Student", action = "StudentAdd", id = UrlParameter.Optional }
-           );
+            // routes.MapRoute(
+            //    name: "StudentAdd",
+            //    url: "studentadd",
+            //    defaults: new { controller = "Student", action = "StudentAdd", id = UrlParameter.Optional }
+            //);
             routes.MapRoute(
                name: "StudentUpdate",
-               url: "studentadd",
-               defaults: new { controller = "Student", action = "StudentAdd", id = UrlParameter.Optional }
+               url: "UpdateStudent/{id}",
+               defaults: new { controller = "Student", action = "StudentUpdate", id = UrlParameter.Optional }
            );
 
 

@@ -13,5 +13,6 @@ namespace IstanbulUni.BAL.Abstract
         void StudentAddBl(Student student);
         bool StudentRemoveBl(Student student);
         Student GetByID(int id);    
+        void StudentUpdate(Student student);
     }
 }
