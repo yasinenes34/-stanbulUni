@@ -16,6 +16,7 @@ namespace IstanbulUni.WebUI.Controllers
     {
         StudentManager sm = new StudentManager(new EfStudentDal());
         #region Index
+        [Authorize]
         public ActionResult Index()
         {
             var userval = sm.GetListBl();
@@ -23,7 +24,8 @@ namespace IstanbulUni.WebUI.Controllers
         }
         #endregion
         #region List
-        [Route("studentlist")]
+        //[Route("studentlist")]
+        [Authorize]
         public ActionResult StudentList()
         {
             var userval = sm.GetListBl();
@@ -31,7 +33,7 @@ namespace IstanbulUni.WebUI.Controllers
         }
         #endregion
         #region Add
-        [Route("studentadd")]
+        [Authorize]
         public ActionResult StudentAdd(Student student)
         {
             StudentValidator validations = new StudentValidator();
@@ -53,15 +55,17 @@ namespace IstanbulUni.WebUI.Controllers
         }
         #endregion
         // GET: Student
-
+        #region Update
         [HttpGet]
+        [Authorize]
         public ActionResult StudentUpdate(int id)
         {
             var student = sm.GetByID(id);
             return View(student);
         }
         [HttpPost]
-        [Route("Student/UpdateStudent/{id}")]
+        [Authorize]
+       
         public ActionResult StudentUpdate(Student student)
         {
             StudentValidator validations = new StudentValidator();
@@ -69,7 +73,7 @@ namespace IstanbulUni.WebUI.Controllers
             if (result.IsValid)
             {
                 sm.StudentUpdate(student);
-                return RedirectToAction("StudentList");
+                return RedirectToAction("Index");
             }
             else
             {
@@ -81,9 +85,11 @@ namespace IstanbulUni.WebUI.Controllers
 
             return View(student);
         }
+        #endregion
+
 
         #region Delete
-        [Route("Student/DeleteStudent/{id}")]
+       
         public ActionResult DeleteStudent(int id)
         {
             var student = sm.GetByID(id);

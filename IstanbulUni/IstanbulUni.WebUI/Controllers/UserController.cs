@@ -8,9 +8,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace IstanbulUni.WebUI.Controllers
 {
+    [AllowAnonymous]
     public class UserController : Controller
     {
         UserManager um = new UserManager(new EfUserDal());
@@ -19,24 +21,30 @@ namespace IstanbulUni.WebUI.Controllers
         {
             return View();
         }
+        #region Login
         public ActionResult Login()
         {
             return View();
         }
         [HttpPost]
-       public ActionResult Login(User user)
+        public JsonResult Login(User user)
         {
             bool userVarMi = um.UserLogin(user);
+
+
             if (userVarMi)
             {
-                return RedirectToAction("StudentList","Student");
+                FormsAuthentication.SetAuthCookie(user.Email, false);
+
+                return Json(userVarMi, JsonRequestBehavior.AllowGet);
             }
             else
-                return RedirectToAction("Login");
-
-
+                return Json(userVarMi, JsonRequestBehavior.AllowGet);
         }
-        [Route("register")]
+        #endregion
+
+
+        #region Register
         public ActionResult Register()
         {
             return View();
@@ -66,10 +74,25 @@ namespace IstanbulUni.WebUI.Controllers
                     }
                 }
             }
-           
+
 
             return View();
         }
+        #endregion
+
+        public ActionResult Logout()
+        {
+            Session.RemoveAll();
+            FormsAuthentication.SignOut();
+
+            return RedirectToAction("Login", "User");
+        }
+        public ActionResult Toast()
+        {
+            
+            return View();
+        }
+       
     }
-  
+
 }

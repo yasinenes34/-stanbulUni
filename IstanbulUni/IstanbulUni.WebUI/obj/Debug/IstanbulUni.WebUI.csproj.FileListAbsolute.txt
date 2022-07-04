@@ -269,3 +269,6 @@ C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Deb
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.dll
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\obj\Debug\IstanbulUni.WebUI.pdb
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Syncfusion.Licensing.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Syncfusion.EJ2.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.WebUI\bin\Syncfusion.EJ2.xml

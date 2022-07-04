@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.props')" />
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -59,6 +60,12 @@
       <HintPath>..\packages\Telerik.UI.for.AspNet.Mvc5.2021.2.616\lib\net45\Kendo.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.EJ2, Version=20.2500.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.EJ2.MVC5.20.2.0.36\lib\net45\Syncfusion.EJ2.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=20.2460.0.36, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.20.2.0.36\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -157,12 +164,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Ogrenci.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -864,6 +873,8 @@
     <Content Include="Content\kendo\2021.2.616\Uniform\sprite_2x.png" />
     <Content Include="Content\kendo\2021.2.616\Uniform\sprite_kpi.png" />
     <Content Include="Content\kendo\2021.2.616\Uniform\sprite_kpi_2x.png" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1464,6 +1475,8 @@
     <Content Include="Content\kendo\2021.2.616-source\dataviz\kendo.dataviz.blueopal.less" />
     <Content Include="Content\kendo\2021.2.616-source\dataviz\kendo.dataviz.black.less" />
     <Content Include="Content\kendo\2021.2.616-source\common\transitions.less" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2566,6 +2579,8 @@
     <Content Include="Scripts\kendo\2021.2.616\messages\kendo.messages.zh-TW.min.js" />
     <Content Include="Scripts\kendo\2021.2.616\pako_deflate.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\404.html" />
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\blank.html" />
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\buttons.html" />
@@ -4273,12 +4288,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\kendo\2021.2.616\messages\kendo.messages.zh-TW.min.js.map" />
     <Content Include="Scripts\kendo\2021.2.616\messages\kendo.messages.zh-HK.min.js.map" />
     <Content Include="Scripts\kendo\2021.2.616\messages\kendo.messages.zh-CN.min.js.map" />
@@ -5546,17 +5557,17 @@
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.min.map" />
     <Content Include="Thema\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Views\User\UserAdd.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
-    <Content Include="Views\Student\StudentList.cshtml" />
     <Content Include="Views\Student\StudentAdd.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\Student\StudentUpdate.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\User\Toast.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Deneme\" />
+    <Folder Include="Content\Toast\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -5580,6 +5591,9 @@
       <Project>{e7108892-7191-4014-807f-9aee7c89c773}</Project>
       <Name>IstanbulUni.DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -5616,8 +5630,11 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.7.4\build\Microsoft.TypeScript.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

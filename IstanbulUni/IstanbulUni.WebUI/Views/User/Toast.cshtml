@@ -1,0 +1,31 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Notifications;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Toast</title>
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/20.2.36/fluent.css" />
+    <script src="https://cdn.syncfusion.com/ej2/20.2.36/dist/ej2.min.js"></script>
+</head>
+<body>
+    <div>
+        @Html.EJS().Toast("element").Title("Giriş Başarlı").Content("Yönlendiriliyorsunuz").Render()
+       
+        <script type="text/javascript">
+            document.getElementById("element").style.backgroundColor = "blue";
+            setTimeout(() => {
+                var toastObj = document.getElementById('element').ej2_instances[0];
+                toastObj.target = document.body;
+                toastObj.show();
+            }, 1000);
+        </script>
+    </div>
+    @Html.EJS().ScriptManager()
+</body>
+</html>
