@@ -11,14 +11,6 @@ namespace IstanbulUni.DAL.EntityFramework
 {
     public class EfStudentDal : GenericRepository<Student>, IStudent
     {
-        public List<Student> GetListBl()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void StudentAddBl(Student student)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

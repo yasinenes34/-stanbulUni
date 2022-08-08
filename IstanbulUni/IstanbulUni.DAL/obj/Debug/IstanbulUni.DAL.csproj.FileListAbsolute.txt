@@ -12,21 +12,6 @@ C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\Is
 C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
 C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.createusertable.resources
 C:\Users\User\source\repos\Yeni klasör\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.GenerateResource.cache
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll.config
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.pdb
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.dll
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.xml
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.AssemblyReference.cache
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.createusertable.resources
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.aa.resources
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.GenerateResource.cache
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CoreCompileInputs.cache
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
-C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll.config
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.pdb
@@ -42,3 +27,18 @@ C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
 C:\Users\User\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll.config
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\IstanbulUni.DAL.pdb
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.createusertable.resources
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.Migrations.aa.resources
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.GenerateResource.cache
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.csproj.CopyComplete
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.dll
+C:\Users\pc\Documents\GitHub\-stanbulUni\IstanbulUni\IstanbulUni.DAL\obj\Debug\IstanbulUni.DAL.pdb

@@ -41,7 +41,7 @@ namespace IstanbulUni.WebUI.Controllers
             if (result.IsValid)
             {
                 sm.StudentAddBl(student);
-                return RedirectToAction("StudentList");
+                return RedirectToAction("Index");
             }
             else
             {
@@ -95,7 +95,7 @@ namespace IstanbulUni.WebUI.Controllers
             var student = sm.GetByID(id);
             sm.StudentRemoveBl(student);
 
-            return RedirectToAction("StudentList", "Student");
+            return RedirectToAction("Index", "Student");
         }
         #endregion
 

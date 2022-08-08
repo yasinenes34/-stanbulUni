@@ -26,6 +26,8 @@
     <!-- Custom styles for this template-->
     <link href="~/Thema/startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gradient-primary">
@@ -51,36 +53,40 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    @using (Html.BeginForm("Login", "User", FormMethod.Post))
-                                    {
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                   name="Email" aria-describedby="emailHelp" id="email"
-                                                   placeholder="Enter Email Address...">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="password"
-                                                   name="Password" placeholder="Password">
-                                        </div>
-                                        <input type="submit" id="login" class="btn btn-primary btn-user btn-block" value="Login" />
+                                    @*@using (Html.BeginForm("Login", "User", FormMethod.Post))
+                                        {*@
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-user"
+                                               name="Email" aria-describedby="emailHelp" id="email"
+                                               placeholder="Enter Email Address...">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-user" id="password"
+                                               name="Password" placeholder="Password">
+                                    </div>
+                                    @*<input type="submit" id="login" class="btn btn-primary btn-user btn-block" value="Login" />*@
+                                    <input type="button" id="login" class="btn btn-primary btn-user btn-block" value="Login" />
 
-                                    }
+                                    @*}*@
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="/User/Register">Create an Account!</a>
                                     </div>
-                                </div>
-                            </div>
 
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
-
         </div>
-
     </div>
+
+
+
 
     <!-- Bootstrap core JavaScript-->
 
@@ -107,7 +113,6 @@
 
             $("#login").click(function () {
 
-
                 var data = new Object();
                 data.Email = $('#email').val();
                 data.Password = $('#password').val();
@@ -119,31 +124,28 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (data) {
-                        if (data) {
-                             @Html.EJS().Toast("element").Title("Giriş Başarlı").Content("Yönlendiriliyorsunuz").Render()
-                            window.location.href = "/Student/Index";
-                        } else {
 
-                              @Html.EJS().Toast("element").Title("Giriş Başarısız").Content("Email ya da şifre yanlış tekrar kontrol ediniz.").Render()
-                            window.location.href = "/User/Login";
+                        if (data) {
+                            toastr.success("Lütfen bekleyin yönlendiriliyorsunuz..", "Login başarılı", { timeOut: 3000 })
+                            window.location.href = "/Student/Index";
+                        }
+                        else {
+                            toastr.error("Lütfen Kullanıcı adı ve şifrenizi kontrol ediniz", "Login başarısız", { timeOut: 3000 })
+
+
+
                         }
                     },
-                    error: function asd() {
-                        alert("hata var")
+                    error: function Error() {
+                        alert("eror")
                     }
                 });
             });
         });
+
+
     </script>
-    <script type="text/javascript">
-        document.getElementById("element").style.backgroundColor = "blue";
-        setTimeout(() => {
-            var toastObj = document.getElementById('element').ej2_instances[0];
-            toastObj.target = document.body;
-            toastObj.show();
-        }, 1000);
-    </script>
-    @Html.EJS().ScriptManager()
+
 </body>
 
 </html>
